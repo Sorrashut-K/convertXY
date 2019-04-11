@@ -1,1 +1,2 @@
-# convertXY
+# Python Location Converter
+usage <inputfile> <outputfile> 
