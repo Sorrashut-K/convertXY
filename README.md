@@ -1,2 +1,2 @@
 # Python Location Converter
-usage <inputfile> <outputfile> 
+usage: python convert.py {inputfile} {outputfile}
