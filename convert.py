@@ -23,10 +23,10 @@ if (len(sys.argv)==3):
                     exit
                 else:
                     row.append('Latitude')  # Add Latitude column
-                    row.append('Longtitude')# Add Longtitud column
+                    row.append('Longtitude')# Add Longtitude column
                     all.append(row)
                     #print("Found X and Y Column!")
-                    print("Starting convert X,Y to Lat,Lon...")
+                    print("Starting convert X,Y to Latitude,Longtitude...")
                     for row in reader:
                         if (row[x] != "" and row[y] != ""):
                             newcol = transform(Proj(init='epsg:3857'), Proj(init='epsg:4326'), row[x], row[y])
@@ -47,4 +47,4 @@ if (len(sys.argv)==3):
     except:
         print("Input file not found!")
 else:
-    print("Usage: python mea.py <inputfile> <outputfile>")
+    print("Usage: python convert.py <inputfile> <outputfile>")
